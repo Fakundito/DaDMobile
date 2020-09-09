@@ -1,0 +1,12 @@
+{
+  "name": "diario-a-diario-app-mobile",
+  "displayName": "diario-a-diario-app-mobile",
+  "expo": {
+    "name": "diario-a-diario-app-mobile",
+    "slug": "diario-a-diario-app-mobile",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}

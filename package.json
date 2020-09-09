@@ -1,0 +1,66 @@
+{
+  "main": "index.js",
+  "scripts": {
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "start": "expo start",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@react-native-community/masked-view": "^0.1.10",
+    "body-parser": "^1.19.0",
+    "expo": "~38.0.1",
+    "expo-font": "^8.2.2",
+    "expo-splash-screen": "~0.3.1",
+    "expo-status-bar": "^1.0.0",
+    "expo-updates": "~0.2.10",
+    "express": "^4.17.1",
+    "link": "^0.1.5",
+    "mysql": "^2.18.1",
+    "native-base": "^2.13.13",
+    "react": "~16.11.0",
+    "react-burger-menu": "^2.7.1",
+    "react-dom": "~16.11.0",
+    "react-native": "^0.62.2",
+    "react-native-calendario": "^2.1.0",
+    "react-native-calendars": "^1.300.0",
+    "react-native-customize-selected-date": "^1.0.1",
+    "react-native-drawer": "^2.5.1",
+    "react-native-elements": "^2.1.0",
+    "react-native-gesture-handler": "^1.6.1",
+    "react-native-material-bottom-navigation": "^1.0.5",
+    "react-native-password-field": "^1.0.8",
+    "react-native-reanimated": "^1.9.0",
+    "react-native-safe-area-context": "^3.1.1",
+    "react-native-screens": "^2.9.0",
+    "react-native-unimodules": "~0.10.1",
+    "react-native-vector-icons": "^7.0.0",
+    "react-native-web": "~0.11.7",
+    "react-navigation": "^4.4.0",
+    "react-navigation-stack": "^2.8.2",
+    "typeface-varela-round": "0.0.71"
+  },
+  "devDependencies": {
+    "@babel/core": "~7.9.0",
+    "babel-jest": "~25.2.6",
+    "jest": "~25.2.6",
+    "react-test-renderer": "~16.11.0",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "jest": {
+    "preset": "react-native"
+  },
+  "rnpm": {
+    "assets": [
+      "./src/assets/fonts/",
+      "./android/app/src/assets/fonts/"
+    ]
+  },
+  "private": true,
+  "name": "dadmobile",
+  "version": "1.0.0",
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

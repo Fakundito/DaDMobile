@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1010446602885",
+    "firebase_url": "https://diarioadiarioappmobile.firebaseio.com",
+    "project_id": "diarioadiarioappmobile",
+    "storage_bucket": "diarioadiarioappmobile.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1010446602885:android:91a85c8be3b14839688fec",
+        "android_client_info": {
+          "package_name": "com.App.DiarioAdiarioAppMobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1010446602885-dlo8ii1qg9sfvkhr8f6h1tvc3is7pn1e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCfBmVSnhYZDwb3WjXlfzGTp3N7jS2Jcw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1010446602885-dlo8ii1qg9sfvkhr8f6h1tvc3is7pn1e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
