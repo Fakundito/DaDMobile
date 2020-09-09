@@ -5,11 +5,11 @@ const HomeScreen = ({ navigation }) => {
     return (
         <View style={styles.container}>
             <TouchableOpacity onPress={() => { navigation.navigate('Home') }}>
-            <View style={styles.container2}>
-                <Image style={styles.logo} source={require('../Images/logo-diario.png')} />
-            </View>
-            <Text style={styles.titulo}>Diario A Diario</Text>
-            <Text style={styles.titulo2}>Cambiando el futuro un dia a la vez</Text>
+                <View style={styles.container2}>
+                    <Image style={styles.logo} source={require('../Images/logo-diario.png')} />
+                </View>
+                <Text style={styles.titulo}>Diario A Diario</Text>
+                <Text style={styles.titulo2}>Cambiando el futuro un dia a la vez</Text>
             </TouchableOpacity>
         </View>
 
@@ -30,13 +30,13 @@ const styles = StyleSheet.create({
         marginTop: '40%',
         marginLeft: '25%',
         marginRight: '25%',
+        justifyContent: 'center',
     },
     logo: {
         width: 120,
         height: 120,
-        marginTop: '20%',
-        marginLeft: '15%',
-        marginRight: '15%',
+        margin: '15%',
+        alignSelf: 'center',
     },
     titulo: {
         color: '#ffff',

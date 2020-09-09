@@ -7,19 +7,19 @@ const RegisterScreen = ({ navigation }) => {
         <View style={styles.container}>
             <Image style={styles.logo} source={require('../Images/logo-diario.png')} />
             <View style={styles.containerForm}>
-                
+
                 <View style={styles.userDiv}>
                     <Image style={styles.fotos} source={require('../Images/perfil.png')} />
                     <TextInput style={styles.form} placeholder='Usuario'
                     />
-                </View> 
+                </View>
                 <View style={styles.userDiv}>
                     <Image style={styles.fotos} source={require('../Images/perfil.png')} />
                     <TextInput style={styles.form} placeholder='Correo electronico'
                     />
-                    
+
                 </View>
-                
+
                 <View style={styles.contDiv}>
                     <Image style={styles.fotos} source={require('../Images/candado.png')} />
                     <TextInput style={styles.form} placeholder='Contraseña'
@@ -61,11 +61,7 @@ const styles = StyleSheet.create({
     },
     containerForm: {
         width: '100%',
-        height: '100%',
         alignItems: 'center',
-        backgroundColor: '#E0E0E3',
-        borderRadius: 100,
-        marginTop: 50,
     },
     logo: {
         width: 100,

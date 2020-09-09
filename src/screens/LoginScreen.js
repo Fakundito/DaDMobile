@@ -47,11 +47,7 @@ const styles = StyleSheet.create({
     },
     containerForm: {
         width: '100%',
-        height: '100%',
         alignItems: 'center',
-        backgroundColor: '#E0E0E3',
-        borderRadius: 100,
-        marginTop: 50,
     },
     logo: {
         width: 100,
