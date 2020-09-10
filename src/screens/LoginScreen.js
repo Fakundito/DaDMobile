@@ -104,6 +104,7 @@ const styles = StyleSheet.create({
         color: '#EEF2F5',
         fontSize: 24,
         alignSelf: 'center',
+        fontFamily: 'Roboto',
     },
     olvide: {
         fontFamily: 'Roboto',

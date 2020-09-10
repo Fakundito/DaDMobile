@@ -7,13 +7,11 @@ const HomeScreen = ({ navigation }) => {
             <View style={styles.container2}>
                 <Image style={styles.logo} source={require('../Images/logo-diario.png')} />
                 <Text style={styles.titulo}>Diario A Diario</Text>
-
                 <View style={styles.containerButtons}>
                     <TouchableOpacity style={styles.boton}
                         onPress={() => { navigation.navigate('Login') }}>
                         <Text style={styles.textBoton}>Iniciar sesión</Text>
                     </TouchableOpacity>
-
                     <TouchableOpacity style={styles.boton}
                         onPress={() => { navigation.navigate('Register') }}>
                         <Text style={styles.textBoton}>Registrarse</Text>

@@ -6,17 +6,14 @@ import {
 import { Calendar } from 'react-native-calendars';
 import { TouchableHighlight } from "react-native-gesture-handler";
 import { ReactBurgerMenu } from "react-burger-menu";
-
+import Menus from '../components/Menus';
 
 const CalendarScreen = ({ navigation }) => {
     const [modalVisible, setModalVisible] = useState(false);
     return (
         <View style={styles.container}>
             <View style={styles.container2}>
-                <View style={styles.topMenu}>
-                    <Image style={styles.menu} source={require('../Images/Menu.png')} />
-                    <Image style={styles.userlogo} source={require('../Images/userlogo.png')} />
-                </View>
+                <Menus />
                 <View style={styles.Cale}>
                     <Calendar
                         onDayPress={(day) => { console.log('selected day', day.dateString) }}
@@ -26,20 +23,20 @@ const CalendarScreen = ({ navigation }) => {
                         style={{
                         }}
                         theme={{
-                            calendarBackground: '#1D1C1C',
-                            textSectionTitleColor: '#b6c1cd',
+                            calendarBackground: '#000000', //Fondo
+                            textSectionTitleColor: '#ffffff', //Nombres de los dias
                             textSectionTitleDisabledColor: '#d9e1e8',
                             selectedDayBackgroundColor: '#00adf5',
                             selectedDayTextColor: '#ffffff',
-                            todayTextColor: '#00adf5',
-                            dayTextColor: 'white',
+                            todayTextColor: '#00adf5', //Dia actual
+                            dayTextColor: '#ffffff', //Todos los dias
                             textDisabledColor: '#d9e1e8',
                             dotColor: '#00adf5',
-                            selectedDotColor: '#FFFFFF',
-                            arrowColor: 'white',
-                            disabledArrowColor: 'white',
-                            monthTextColor: 'white',
-                            indicatorColor: 'white',
+                            selectedDotColor: '#ffffff',
+                            arrowColor: '#ffffff', //Flechas
+                            disabledArrowColor: '#ffffff',
+                            monthTextColor: '#ffffff', //Mes
+                            indicatorColor: '#ffffff',
                             textDayFontFamily: 'Roboto',
                             textMonthFontFamily: 'Roboto',
                             textDayHeaderFontFamily: 'Roboto',
@@ -50,13 +47,6 @@ const CalendarScreen = ({ navigation }) => {
                             textDayHeaderFontSize: 15
                         }}
                     />
-                </View>
-                <View style={styles.Line}>
-                    <View style={styles.BottomMenu}>
-                        <Image style={styles.map} source={require('../Images/MapIcon.png')} />
-                        <Image style={styles.logo} source={require('../Images/logo-white.png')} />
-                        <Image style={styles.search} source={require('../Images/search-menu.png')} />
-                    </View>
                 </View>
             </View>
         </View>
@@ -79,6 +69,14 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         backgroundColor: '#191818',
     },
+    cont3: {
+        flex: 1,
+        width: '100%',
+        height: '100%',
+        position: 'absolute',
+        flexDirection: 'column',
+        justifyContent: 'space-between',
+    },
     topMenu: {
         marginTop: 10,
         flex: 1,
@@ -95,14 +93,17 @@ const styles = StyleSheet.create({
         marginLeft: 10,
     },
     userlogo: {
-        width: 45,
-        height: 45,
+        width: 40,
+        height: 40,
         marginRight: 10,
     },
     Cale: {
         width: '95%',
         alignItems: 'stretch',
-        marginBottom: '40%',
+        top: '15%',
+    },
+    Li: {
+        justifyContent: 'flex-end',
     },
     Line: {
         flex: 1,
@@ -110,16 +111,17 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     BottomMenu: {
+        height: 70,
         width: '95%',
         flex: 1,
         display: 'flex',
         flexDirection: 'row',
-        borderTopColor: 'white',
+        borderTopColor: '#ffffff',
         borderTopWidth: 0.5,
         justifyContent: 'space-evenly',
-        alignItems: 'center',
     },
     map: {
+        margin: 15,
         width: 40,
         height: 40,
     },
@@ -128,9 +130,11 @@ const styles = StyleSheet.create({
         height: 70,
     },
     search: {
+        margin: 15,
         width: 40,
         height: 40,
     },
 });
+
 export default CalendarScreen;
 
