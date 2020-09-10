@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import {
-    View, Text, StyleSheet, Image, Icon, Alert,
-    Modal,
+    View, StyleSheet, Icon, Alert, Modal,
 } from 'react-native';
 import { Calendar } from 'react-native-calendars';
 import { TouchableHighlight } from "react-native-gesture-handler";

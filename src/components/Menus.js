@@ -1,19 +1,29 @@
-import React from "react";
-import { View, StyleSheet, Image, } from 'react-native';
+import React from 'react';
+import { View, StyleSheet, Image, TouchableOpacity } from 'react-native';
 
 const Menus = ({ navigation }) => {
     return (
-        <View style={styles.cont3}>
+        <View style={styles.container}>
             <View style={styles.topMenu}>
-                <Image style={styles.menu} source={require('../Images/Menu.png')} />
-                <Image style={styles.userlogo} source={require('../Images/userlogo.png')} />
+                <TouchableOpacity onPress={() => { navigation.navigate('Home') }}>
+                    <Image style={styles.menu} source={require('../Images/Menu.png')} />
+                </TouchableOpacity>
+                <TouchableOpacity onPress={() => { navigation.navigate('Login') }}>
+                    <Image style={styles.userlogo} source={require('../Images/userlogo.png')} />
+                </TouchableOpacity>
             </View>
             <View style={styles.Li}>
                 <View style={styles.Line}>
                     <View style={styles.BottomMenu}>
-                        <Image style={styles.map} source={require('../Images/MapIcon.png')} />
-                        <Image style={styles.logo} source={require('../Images/logo-white.png')} />
-                        <Image style={styles.search} source={require('../Images/search-menu.png')} />
+                        <TouchableOpacity onPress={() => { navigation.navigate('Login') }}>
+                            <Image style={styles.map} source={require('../Images/MapIcon.png')} />
+                        </TouchableOpacity>
+                        <TouchableOpacity onPress={() => { navigation.navigate('Login') }}>
+                            <Image style={styles.logo} source={require('../Images/logo-white.png')} />
+                        </TouchableOpacity>
+                        <TouchableOpacity onPress={() => { navigation.navigate('Login') }}>
+                            <Image style={styles.search} source={require('../Images/search-menu.png')} />
+                        </TouchableOpacity>
                     </View>
                 </View>
             </View>
@@ -22,7 +32,7 @@ const Menus = ({ navigation }) => {
 };
 
 const styles = StyleSheet.create({
-    cont3: {
+    container: {
         backgroundColor: '#000000',
         flex: 1,
         width: '100%',
