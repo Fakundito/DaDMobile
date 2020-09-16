@@ -15,7 +15,7 @@ const CalendarScreen = ({ navigation }) => {
                 <Menus />
                 <View style={styles.Cale}>
                     <Calendar
-                        onDayPress={(day) => { console.log('selected day', day.dateString) }}
+                        onDayPress={(day) => { console.log('selected day', day.dateString), navigation.navigate('Notice') }}
                         horizontal={true}
                         pagingEnabled={true}
                         hideExtraDays={false}

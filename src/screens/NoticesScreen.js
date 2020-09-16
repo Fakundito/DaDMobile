@@ -24,10 +24,6 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         backgroundColor: '#191818',
     },
-    container2: {
-        width: '100%',
-        height: '100%',
-    },
 });
 
 export default NoticeScreen;

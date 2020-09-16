@@ -21,9 +21,9 @@ const styles = StyleSheet.create({
     },
     container2: {
         flexDirection: 'row',
-        marginTop: '2%',
-        marginBottom: '2%',
-        paddingRight: '10%',
+        marginTop: '3%',
+        marginBottom: '3%',
+        marginRight: '30%',
     },
     foto: {
         width: 120,
