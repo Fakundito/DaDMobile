@@ -1,11 +1,21 @@
 import React, { useState } from "react";
 import {
-    View, StyleSheet, Icon, Alert, Modal,
+    View, StyleSheet, Icon, Alert, Modal, Text
 } from 'react-native';
 import { Calendar } from 'react-native-calendars';
-import { TouchableHighlight } from "react-native-gesture-handler";
+import { TouchableHighlight, TouchableOpacity } from "react-native-gesture-handler";
 import { ReactBurgerMenu } from "react-burger-menu";
 import Menus from '../components/Menus';
+import { LocaleConfig } from 'react-native-calendars';
+
+LocaleConfig.locales['fr'] = {
+    monthNames: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
+    monthNamesShort: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sept', 'Oct', 'Nov', 'Dic'],
+    dayNames: ['Domingo', 'Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado'],
+    dayNamesShort: ['Dom', 'Lun', 'Mar', 'Mie', 'Jue', 'Vie', 'Sab'],
+    today: 'Aujourd\'hui'
+};
+LocaleConfig.defaultLocale = 'fr';
 
 const CalendarScreen = ({ navigation }) => {
     const [modalVisible, setModalVisible] = useState(false);

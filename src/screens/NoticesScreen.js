@@ -1,12 +1,14 @@
 import React from 'react';
-import { View, StyleSheet } from 'react-native';
+import { View, StyleSheet, TouchableOpacity } from 'react-native';
 import Notice from '../components/Notice';
 import Menus from '../components/Menus';
 
-const NoticeScreen = () => {
+const NoticeScreen = ({ navigation }) => {
     return (
         <View style={styles.container}>
-            <Notice />
+            <TouchableOpacity style={styles.touch} onPress={() => { navigation.navigate('Calendar') }}>
+                <Notice />
+            </TouchableOpacity>
             <Notice />
             <Notice />
             <Notice />
@@ -24,6 +26,9 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         backgroundColor: '#191818',
     },
+    touch: {
+        alignItems: 'center'
+    }
 });
 
 export default NoticeScreen;

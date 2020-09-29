@@ -12,7 +12,6 @@ const HomeScreen = ({ navigation }) => {
                 <Text style={styles.titulo2}>Cambiando el futuro un dia a la vez</Text>
             </TouchableOpacity>
         </View>
-
     )
 };
 
@@ -21,13 +20,11 @@ const styles = StyleSheet.create({
         flex: 1,
         alignItems: 'center',
         backgroundColor: '#004680',
+        justifyContent: 'center',
     },
     container2: {
         backgroundColor: '#ffff',
-        height: '30%',
-        width: '50%',
         borderRadius: 30,
-        marginTop: '40%',
         marginLeft: '25%',
         marginRight: '25%',
         justifyContent: 'center',
@@ -52,7 +49,8 @@ const styles = StyleSheet.create({
         alignSelf: 'center',
         fontFamily: 'Roboto',
         fontWeight: 'bold',
-        marginTop: '10%'
+        marginTop: '10%',
+        marginBottom: '10%',
     },
 });
 

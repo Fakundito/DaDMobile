@@ -19,10 +19,7 @@ const AppNavigator = createStackNavigator(
   {
 
     initialRouteName: 'Splash',
-    defaultNavigationOptions: {
-      title: 'DiarioAdiario App',
-    },
-    headerLayoutPreset: 'center'
+    headerMode: 'none',
   },
 
 );

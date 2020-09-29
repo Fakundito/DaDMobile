@@ -33,12 +33,12 @@ const styles = StyleSheet.create({
         width: '100%',
         height: '100%',
         alignItems: 'center',
+        justifyContent: 'center',
     },
     logo: {
         width: 100,
         height: 100,
         marginBottom: '5%',
-        marginTop: '10%',
     },
     titulo: {
         color: '#000000',

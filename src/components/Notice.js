@@ -1,15 +1,13 @@
 import React from 'react';
-import { View, Text, Image, StyleSheet, TouchableOpacity } from 'react-native';
+import { View, Text, Image, StyleSheet } from 'react-native';
 
 const Notice = () => {
     return (
         <View style={styles.container}>
-            <TouchableOpacity onPress={() => { console.log('Noticia') }}>
-                <View style={styles.container2}>
-                    <Image style={styles.foto} source={require('../Images/logo-diario.png')} />
-                    <Text style={styles.title}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Text>
-                </View>
-            </TouchableOpacity>
+            <View style={styles.container2}>
+                <Image style={styles.foto} source={require('../Images/logo-diario.png')} />
+                <Text style={styles.title}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Text>
+            </View>
             <View style={styles.line} />
         </View>
     )
@@ -23,7 +21,6 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         marginTop: '3%',
         marginBottom: '3%',
-        marginRight: '30%',
     },
     foto: {
         width: 120,
@@ -31,7 +28,6 @@ const styles = StyleSheet.create({
         marginRight: 20,
     },
     title: {
-        fontWeight: 'bold',
         color: '#ffffff',
         fontSize: 20,
         alignSelf: 'center',
